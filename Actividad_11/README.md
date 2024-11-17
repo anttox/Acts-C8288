@@ -17,6 +17,7 @@ npx create-next-app@latest refactored-app --typescript
 npm install
 ```
 ### 4. Estructura de la Actividad_11
+
 refactored-app/
   ├── .next
   ├── pages/
