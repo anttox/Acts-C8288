@@ -1,4 +1,10 @@
 # Actividad 11: Refactorización de Aplicaciones Express.js y React a Next.js
 
-## Objetivo: 
+## Objetivo
 Refactorizar aplicaciones anteriores de Express.js y React en una aplicación Next.js. Esto incluye la migración de rutas API, el manejo de rutas dinámicas, la creación de interfaces personalizadas en TypeScript, y la creación de páginas con componentes personalizados de Next.js.
+
+## Creación del proyecto
+### 1. Crear la aplicación base con TypeScript:
+```bash
+npx create-next-app@latest refactored-app --typescript
+```
