@@ -48,8 +48,8 @@ El orden en las rutas de una aplicación Express es crucial porque las rutas se 
 
 # Ejercicios
 ## Ejercicio 1
-1. Creación de una aplicación Hello World con Express
-Objetivo: Familiarizarse con la instalación y configuración básica de Express creando una aplicación
+1. Creación de una aplicación Hello World con Express/
+Objetivo: Familiarizarse con la instalación y configuración básica de Express creando una aplicación/
 simple que responda con "Hello World desde Express!".
 Instrucciones:
 a. Inicializar un nuevo proyecto: Crea una nueva carpeta para tu proyecto y ejecuta npm init para
