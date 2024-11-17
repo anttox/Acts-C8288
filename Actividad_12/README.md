@@ -48,16 +48,19 @@ El orden en las rutas de una aplicación Express es crucial porque las rutas se 
 
 # Ejercicios
 ## Ejercicio 1
-1. Creación de una aplicación Hello World con Express/
-Objetivo: Familiarizarse con la instalación y configuración básica de Express creando una aplicación/
-simple que responda con "Hello World desde Express!".
+1. Creación de una aplicación Hello World con Express
+
+Objetivo: Familiarizarse con la instalación y configuración básica de Express creando una aplicación simple que responda con "Hello World desde Express!".
+
 Instrucciones:
+
 a. Inicializar un nuevo proyecto: Crea una nueva carpeta para tu proyecto y ejecuta npm init para
 inicializar un archivo package.json.
+
 b. Instalar Express: Ejecuta el comando de instalación de Express utilizando npm install express@4.
-c. Crear el archivo principal: Crea un archivo llamado helloWorld.js y configura una aplicación
-Express que escuche en el puerto 3000 y responda con el mensaje especificado cuando se acceda a
-la ruta raíz /.
+
+c. Crear el archivo principal: Crea un archivo llamado helloWorld.js y configura una aplicación Express que escuche en el puerto 3000 y responda con el mensaje especificado cuando se acceda a la ruta raíz /.
+
 d. Ejecutar la aplicación: Inicia la aplicación utilizando node helloWorld.js y verifica que al acceder a
 http://localhost:3000 en el navegador se muestre el mensaje esperado
 
@@ -65,52 +68,54 @@ http://localhost:3000 en el navegador se muestre el mensaje esperado
 
 ## Ejercicio 2
 2. Generación de una aplicación con express-generator
-Objetivo: Utilizar express-generator para crear una estructura de aplicación Express y explorar
-los archivos y carpetas generados.
+
+Objetivo: Utilizar express-generator para crear una estructura de aplicación Express y explorar los archivos y carpetas generados.
+
 Instrucciones:
-a. Instalar express-generator: Asegúrate de tener instalado express-generator ejecutando npx
-express-generator@4.
-b. Generar la aplicación: Dentro de una nueva carpeta, ejecuta el comando para generar la
-estructura básica de la aplicación.
-c. Instalar dependencias: Navega a la carpeta generada y ejecuta npm install para instalar las
-dependencias necesarias.
-d. Iniciar la aplicación: Inicia la aplicación utilizando npm start y accede a http://localhost:3000 para
-ver la aplicación generada. Explora las diferentes rutas y archivos generados, como routes/index.js y
-views/index.jade (o views/index.ejs si se ha configurado)
+
+a. Instalar express-generator: Asegúrate de tener instalado express-generator ejecutando npx express-generator@4.
+
+b. Generar la aplicación: Dentro de una nueva carpeta, ejecuta el comando para generar la estructura básica de la aplicación.
+
+c. Instalar dependencias: Navega a la carpeta generada y ejecuta npm install para instalar las dependencias necesarias.
+
+d. Iniciar la aplicación: Inicia la aplicación utilizando npm start y accede a http://localhost:3000 para ver la aplicación generada. Explora las diferentes rutas y archivos generados, como routes/index.js y views/index.jade (o views/index.ejs si se ha configurado).
 
 ![imagen](https://github.com/user-attachments/assets/364d4517-8dcc-4ee0-b70f-b80a31520c15)
 
 ## Ejercicio 3
 3. Configuración y uso de un motor de plantillas (EJS)
-Objetivo: Configurar un motor de plantillas EJS en una aplicación Express y renderizar una página
-dinámica con datos interpolados.
+
+Objetivo: Configurar un motor de plantillas EJS en una aplicación Express y renderizar una página dinámica con datos interpolados.
+
 Instrucciones:
+
 a. Instalar EJS: Ejecuta npm install ejs@3 para agregar EJS como dependencia.
-b. Configurar el motor de plantillas: En tu archivo principal de Express (por ejemplo,
-helloWorldTemplate.js), configura EJS como el motor de plantillas utilizando app.set('view engine',
-'ejs').
-c. Crear una vista EJS: Dentro de la carpeta views, crea un archivo index.ejs que contenga etiquetas
-para interpolar variables como <%= title %> y <%= subtitle %>.
-d. Renderizar la vista: Define una ruta en Express que renderice index.ejs pasando un objeto con
-title y subtitle.
-e. Ejecutar y verificar: Inicia la aplicación y accede a http://localhost:3000 para ver la página
-renderizada con los valores interpolados
+
+b. Configurar el motor de plantillas: En tu archivo principal de Express (por ejemplo, helloWorldTemplate.js), configura EJS como el motor de plantillas utilizando app.set('view engine', 'ejs').
+
+c. Crear una vista EJS: Dentro de la carpeta views, crea un archivo index.ejs que contenga etiquetas para interpolar variables como <%= title %> y <%= subtitle %>.
+
+d. Renderizar la vista: Define una ruta en Express que renderice index.ejs pasando un objeto con title y subtitle.
+
+e. Ejecutar y verificar: Inicia la aplicación y accede a http://localhost:3000 para ver la página renderizada con los valores interpolados
 
 ![imagen](https://github.com/user-attachments/assets/a783d949-1155-433d-b7d5-06417233e928)
 
 ## Ejercicio 4
 4. Definición de rutas estáticas y dinámicas en express
-Objetivo: Practicar la creación de rutas estáticas y dinámicas en una aplicación Express, incluyendo
-el manejo de parámetros opcionales y expresiones regulares.
+
+Objetivo: Practicar la creación de rutas estáticas y dinámicas en una aplicación Express, incluyendo el manejo de parámetros opcionales y expresiones regulares.
+
 Instrucciones:
-a. Crear rutas estáticas: Define rutas como /, /users, y /about que respondan con mensajes o
-rendericen vistas específicas.
-b. Implementar rutas dinámicas: Crea rutas que incluyan parámetros dinámicos, por ejemplo,
-/users/:id, y maneja las solicitudes extrayendo los parámetros desde req.params.
-c. Añadir parámetros opcionales: Implementa una ruta con parámetros opcionales, como
-/invoice/:id?, y maneja casos donde el parámetro puede estar presente o ausente.
-d. Utilizar expresiones regulares en rutas: Define una ruta que utilice una expresión regular para
-coincidir con patrones específicos, por ejemplo, rutas que terminen con fly.
-e. Verificar el orden de las rutas: Experimenta cambiando el orden de las rutas definidas y observa
-cómo afecta a la coincidencia de rutas específicas y dinámicas.
+
+a. Crear rutas estáticas: Define rutas como /, /users, y /about que respondan con mensajes o rendericen vistas específicas.
+
+b. Implementar rutas dinámicas: Crea rutas que incluyan parámetros dinámicos, por ejemplo, /users/:id, y maneja las solicitudes extrayendo los parámetros desde req.params.
+
+c. Añadir parámetros opcionales: Implementa una ruta con parámetros opcionales, como /invoice/:id?, y maneja casos donde el parámetro puede estar presente o ausente.
+
+d. Utilizar expresiones regulares en rutas: Define una ruta que utilice una expresión regular para coincidir con patrones específicos, por ejemplo, rutas que terminen con fly.
+
+e. Verificar el orden de las rutas: Experimenta cambiando el orden de las rutas definidas y observa cómo afecta a la coincidencia de rutas específicas y dinámicas.
 
