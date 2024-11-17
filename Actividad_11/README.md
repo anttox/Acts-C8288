@@ -59,9 +59,7 @@ longitud).
 
 ![imagen](https://github.com/user-attachments/assets/d51cd537-d60c-4c01-b0d1-4346fdb066cf)
 
-Pregunta teórica: ¿Por qué es importante devolver códigos de estado HTTP adecuados en las API y
-cómo pueden afectar la experiencia del usuario o el comportamiento de los clientes que consumen
-la API.
+### Pregunta teórica: ¿Por qué es importante devolver códigos de estado HTTP adecuados en las API y cómo pueden afectar la experiencia del usuario o el comportamiento de los clientes que consumen la API.
 
 Devolver códigos de estado HTTP adecuados es fundamental porque permite identificar claramente el resultado de una solicitud, ya sea exitosa o fallida, lo que mejora la claridad y depuración tanto para los desarrolladores como para los clientes que consumen la API. Por ejemplo, un código 400 indica que hubo un error en la solicitud del cliente, mientras que un 500 refleja un problema en el servidor. Esto ayuda a los clientes a manejar errores de manera proactiva, mostrando mensajes claros al usuario, como corregir un código postal inválido en lugar de un mensaje genérico.
 
