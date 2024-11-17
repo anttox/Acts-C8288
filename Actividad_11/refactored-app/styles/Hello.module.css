@@ -1,0 +1,19 @@
+.container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #0070f3;
+}
+
+.link {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.image {
+  margin-top: 20px;
+}
