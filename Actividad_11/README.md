@@ -17,7 +17,7 @@ npx create-next-app@latest refactored-app --typescript
 npm install
 ```
 ### 4. Estructura de la Actividad_11
-
+```bash
 refactored-app/
   ├── .next
   ├── pages/
@@ -42,7 +42,7 @@ refactored-app/
   ├── next.config.ts
   ├── tsconfig.json
   ├── package.json
-
+```
 # Ejercicios
 ## Ejercicio 1: Agregar manejo de errores en las rutas de API
 ### Objetivo: Mejorar la robustez de la aplicación manejando errores de manera apropiada en las rutas de API.
