@@ -59,7 +59,7 @@ longitud).
 
 ![imagen](https://github.com/user-attachments/assets/d51cd537-d60c-4c01-b0d1-4346fdb066cf)
 
-#### Pregunta teórica: ¿Por qué es importante devolver códigos de estado HTTP adecuados en las API y cómo pueden afectar la experiencia del usuario o el comportamiento de los clientes que consumen la API.
+### Pregunta teórica: ¿Por qué es importante devolver códigos de estado HTTP adecuados en las API y cómo pueden afectar la experiencia del usuario o el comportamiento de los clientes que consumen la API.
 Devolver códigos de estado HTTP adecuados es fundamental porque permite identificar claramente el resultado de una solicitud, ya sea exitosa o fallida, lo que mejora la claridad y depuración tanto para los desarrolladores como para los clientes que consumen la API. Por ejemplo, un código 400 indica que hubo un error en la solicitud del cliente, mientras que un 500 refleja un problema en el servidor. Esto ayuda a los clientes a manejar errores de manera proactiva, mostrando mensajes claros al usuario, como corregir un código postal inválido en lugar de un mensaje genérico.
 
 ## Ejercicio 2: Integración de CSS módular
@@ -72,7 +72,7 @@ estilos aislados.
 
 ![imagen](https://github.com/user-attachments/assets/0fdeee69-0448-47fd-b6a9-75375eb43cff)
 
-#### Pregunta teórica: Explica las ventajas de usar CSS modular en comparación con el uso de un archivo CSS global en una aplicación grande.
+### Pregunta teórica: Explica las ventajas de usar CSS modular en comparación con el uso de un archivo CSS global en una aplicación grande.
 Los CSS modulares son archivos de estilo que encapsulan las clases dentro del componente donde se usan, evitando conflictos de nombres y asegurando estilos específicos para cada componente. Aportan ventajas como aislamiento de estilos, facilidad de mantenimiento al tener estilos asociados directamente a cada componente, eficiencia al cargar solo los estilos necesarios, escalabilidad en aplicaciones grandes al prevenir interferencias entre componentes y la eliminación de riesgos de que estilos globales afecten otros elementos inesperadamente.
 
 ## Ejercicio 3: Extender la funcionalidad del contador en weather.tsx
@@ -85,7 +85,7 @@ localStorage al cargar la página.
 
 ![imagen](https://github.com/user-attachments/assets/daa82646-ffb1-497b-97fb-e8e0962316b5)
 
-##### Pregunta teórica: ¿Cómo puedes usar localStorage en una aplicación Next.js para guardar datos de sesión, y cuáles son las limitaciones de esta aproximación?.
+### Pregunta teórica: ¿Cómo puedes usar localStorage en una aplicación Next.js para guardar datos de sesión, y cuáles son las limitaciones de esta aproximación?.
 En una aplicación Next.js, puedes usar localStorage para guardar datos de sesión accediendo al navegador después de que el componente haya sido montado, utilizando useEffect, ya que localStorage solo está disponible en el cliente. Esto permite guardar valores como contadores o preferencias del usuario y recuperarlos al recargar la página. Sin embargo, tiene limitaciones: no está disponible en el servidor (no se puede usar durante el renderizado inicial), el almacenamiento es limitado (5-10 MB según el navegador), los datos no están encriptados (no es seguro para información sensible), no hay sincronización automática entre pestañas, y los datos se pierden si el usuario limpia el almacenamiento del navegador.
 
 ## Ejercicio 4: Implementar parámetros opcionales en la API
@@ -98,7 +98,7 @@ desde components/weather.tsx.
 
 ![imagen](https://github.com/user-attachments/assets/cfd5978d-cf59-4dd3-918a-54cd31627939)
 
-#### Pregunta teórica: ¿Cómo gestionaría Next.js rutas con parámetros opcionales y cómo esto podría beneficiar la flexibilidad de la API?
+### Pregunta teórica: ¿Cómo gestionaría Next.js rutas con parámetros opcionales y cómo esto podría beneficiar la flexibilidad de la API?
 Next.js gestiona parámetros opcionales utilizando la sintaxis de query strings (req.query). Esto permite enviar valores opcionales en la URL, como ?param=value, y manejarlos en el servidor para ajustar la respuesta en función de estos. Esto beneficia la flexibilidad de la API al permitir respuestas dinámicas sin necesidad de crear múltiples rutas, reduciendo la complejidad del código y mejorando la experiencia del cliente al proporcionar personalización según sus necesidades.
 
 ## Ejercicio 5: Agregar SEO con el componente next/head
@@ -110,7 +110,7 @@ mejoren el SEO de la aplicación.
 
 ![imagen](https://github.com/user-attachments/assets/71fede93-cd18-447d-98ae-c54a4c4e7531)
 
-#### Pregunta teórica: ¿Por qué es importante el SEO en una aplicación web y cómo afecta la indexación de los motores de búsqueda al rendimiento de la misma?.
+### Pregunta teórica: ¿Por qué es importante el SEO en una aplicación web y cómo afecta la indexación de los motores de búsqueda al rendimiento de la misma?.
 El SEO (Optimización para Motores de Búsqueda) es fundamental para mejorar la visibilidad de una aplicación web en los motores de búsqueda como Google. Un buen SEO aumenta la probabilidad de que los usuarios encuentren la página al buscar términos relevantes. Esto impacta positivamente en el tráfico orgánico, la experiencia del usuario y la credibilidad del sitio.
 
 La indexación adecuada permite que los motores de búsqueda comprendan mejor el contenido de la página. Esto afecta el rendimiento de la aplicación, ya que un contenido optimizado y bien indexado tiene más probabilidades de aparecer en los primeros resultados de búsqueda, aumentando la tasa de clics y la conversión.
