@@ -8,3 +8,12 @@ Refactorizar aplicaciones anteriores de Express.js y React en una aplicación Ne
 ```bash
 npx create-next-app@latest refactored-app --typescript
 ```
+### 2. Configuración correcta para la generación del proyecto
+
+![imagen](https://github.com/user-attachments/assets/78075f54-62ce-4f14-9c9b-6d1a213717a5)
+
+### 3. Intalacion de dependencias (opcional)
+```bash
+npm install
+```
+
