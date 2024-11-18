@@ -119,3 +119,131 @@ d. Utilizar expresiones regulares en rutas: Define una ruta que utilice una expr
 
 e. Verificar el orden de las rutas: Experimenta cambiando el orden de las rutas definidas y observa cómo afecta a la coincidencia de rutas específicas y dinámicas.
 
+![imagen](https://github.com/user-attachments/assets/d0b5617b-bbee-4baa-b076-dd5191ce99e6)
+
+![imagen](https://github.com/user-attachments/assets/70082b5b-e893-4ecd-a916-077f761fc72a)
+
+![imagen](https://github.com/user-attachments/assets/f4770288-6fdd-45f7-ba80-3d3732d16597)
+
+![imagen](https://github.com/user-attachments/assets/7a896502-dcb6-487a-abcc-e670a44456de)
+
+![imagen](https://github.com/user-attachments/assets/7528d640-60d7-4390-94a8-8ff5b2719690)
+
+![imagen](https://github.com/user-attachments/assets/04b8bf14-1be0-4a81-9060-a3b099e4c48f)
+
+## Ejercicio 5
+5. Manejo de respuestas HTTP en Express
+
+Objetivo: Comprender y practicar el manejo de diferentes tipos de respuestas HTTP, incluyendo la configuración de encabezados, códigos de estado, redirecciones y el envío de datos o archivos.
+
+Instrucciones:
+
+a. Configurar encabezados: Define rutas que configuren diferentes encabezados en las respuestas utilizando res.set().
+
+b. Establecer códigos de estado: Implementa respuestas que utilicen diferentes códigos de estado HTTP, como 200 OK, 404 Not Found, y 500 Internal Server Error, utilizando res.status() o res.sendStatus().
+
+c. Realizar redirecciones: Crea rutas que redirijan a otras URLs, ya sean externas (por ejemplo, https://example.com) o internas (otras rutas dentro de la aplicación), utilizando res.redirect().
+
+d. Enviar datos en fiferentes formatos: Practica el envío de respuestas en formato de texto, JSON y archivos utilizando métodos como res.send(), res.json() y res.sendFile().
+
+e.Probar las respuestas: Accede a las diferentes rutas definidas y utiliza herramientas como el navegador o curl para verificar que las respuestas se manejan correctamente según lo configurado.
+
+![imagen](https://github.com/user-attachments/assets/517f9d36-4185-4f0d-922a-ca66d29f03b7)
+
+![imagen](https://github.com/user-attachments/assets/7e35d607-708b-419b-8e50-0d14cbf5fe5a)
+
+![imagen](https://github.com/user-attachments/assets/744c4785-df0e-4366-8519-75aefc39c685)
+
+![imagen](https://github.com/user-attachments/assets/bb159401-6722-48d1-8bdf-81a312073597)
+
+## Ejercicio 6
+6. Implementación de middleware para manejo de errores
+
+Objetivo: Aprender a crear e integrar middleware personalizado para manejar errores en una aplicación Express.
+
+Instrucciones:
+
+a. Definir middleware de error: Crea una función middleware que capture errores y envíe una respuesta adecuada al cliente.
+
+b. Integrar middleware en la aplicación: Asegúrate de que el middleware de error esté definido después de todas las rutas para que pueda capturar cualquier error que ocurra durante el manejo de las solicitudes.
+
+c. Generar errores intencionalmente: Define rutas que generen errores intencionales para probar el funcionamiento del middleware de error.
+
+d. Verificar la respuesta de errores: Accede a las rutas que generan errores y confirma que el middleware maneja y responde correctamente a los errores.
+
+![imagen](https://github.com/user-attachments/assets/2adf29e9-41dc-4562-b305-fff5aac0a85a)
+
+![imagen](https://github.com/user-attachments/assets/784f6c12-d85f-4d82-852b-35db3083e5aa)
+
+![imagen](https://github.com/user-attachments/assets/0a2999af-7922-46c3-a4e3-513114cbd5cf)
+
+## Ejercicio 7
+7. Uso de la herramienta debug para depuración en Express
+
+Objetivo: Utilizar la herramienta debug para obtener información detallada sobre las solicitudes y respuestas en una aplicación Express.
+
+Instrucciones:
+
+a. Iniciar la aplicación con DEBUG: Ejecuta la aplicación Express utilizando la variable de entorno DEBUG=* o una específica como DEBUG=express:* para habilitar la salida de depuración.
+
+b. Analizar la información de depuración: Observa la información detallada que se muestra en la terminal sobre las solicitudes entrantes, respuestas enviadas y otros eventos internos de Express.
+
+c. Filtrar información de depuración: Experimenta utilizando diferentes patrones en la variable DEBUG para filtrar la información de depuración relevante.
+
+d. Aplicar depuración en casos de errores: Utiliza la herramienta debug para identificar y resolver problemas en la aplicación mediante el análisis de la información proporcionada.
+
+![imagen](https://github.com/user-attachments/assets/772ef895-a73c-4049-a176-938cb11f1d09)
+
+![imagen](https://github.com/user-attachments/assets/51581012-9f62-4e4f-9207-2e6fd99e9fd4)
+
+**Solo logs generales, no errores**
+
+![imagen](https://github.com/user-attachments/assets/17d1a24c-0532-467a-87ef-7e887d0f604b)
+
+**Solo errores**
+
+![imagen](https://github.com/user-attachments/assets/c076847e-3b06-46a4-b6ae-de19a1c9f7a9)
+
+## Ejercicio 8
+8. Envío de archivos estáticos y descargas en Express
+
+Objetivo: Implementar rutas que sirvan archivos estáticos y permitan a los usuarios descargar archivos específicos desde la aplicación Express.
+
+Instrucciones:
+
+a. Servir archivos estáticos: Configura Express para servir archivos estáticos desde una carpeta específica utilizando express.static().
+
+b. Enviar archivos específicos: Define rutas que utilicen res.sendFile() para enviar archivos específicos al cliente.
+
+c. Implementar descargas de archivos: Crea rutas que permitan a los usuarios descargar archivos utilizando res.download(), configurando encabezados apropiados para la descarga.
+
+d. Verificar el envío y descarga de archivos: Accede a las rutas definidas y confirma que los archivos se sirven correctamente y que las descargas funcionan como se espera.
+
+![imagen](https://github.com/user-attachments/assets/f807e552-71a3-40cd-acc9-41777d3a7c71)
+
+**Archivo especifico usando file**
+
+![imagen](https://github.com/user-attachments/assets/628f2511-dd33-4c2f-b61a-ac735830d265)
+
+**Descargar archivos**
+
+![imagen](https://github.com/user-attachments/assets/0cd2a65c-1bce-4181-be5a-c0f36c7ede12)
+
+## Ejercicio 9
+9. Configuración de middleware para procesamiento de datos de solicitud
+
+Objetivo: Integrar y utilizar middleware en Express para procesar datos enviados en las solicitudes, como cuerpos JSON o formularios.
+
+Instrucciones:
+
+a. Instalar middleware necesario: Añade y configura middleware como express.json() y express.urlencoded() para manejar datos JSON y formularios.
+
+b. Definir rutas que reciban datos: Crea rutas que reciban datos enviados en el cuerpo de la solicitud y procesa estos datos dentro de los manejadores de rutas.
+
+c. Validar y responder a los datos recibidos: Implementa lógica para validar los datos recibidos y envía respuestas adecuadas al cliente basadas en la validación.
+
+d. Probar el envío de datos: Utiliza herramientas como Postman o curl para enviar solicitudes con diferentes tipos de datos y verifica que la aplicación los maneje correctamente.
+
+![imagen](https://github.com/user-attachments/assets/880817db-33d3-4b99-bc47-b236c85dfbc8)
+
+
