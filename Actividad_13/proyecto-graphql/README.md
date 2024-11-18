@@ -42,3 +42,32 @@ En GraphQL, una consulta (Query) se utiliza para obtener datos del servidor, mie
 - Actualiza el tipo Query para incluir una consulta users que retorne una lista de User.
 - Implementa los resolvers necesarios en resolvers.ts.
 - Actualiza el archivo data.ts para incluir datos de usuarios.
+
+![imagen](https://github.com/user-attachments/assets/cf42e171-4b3a-46f8-9360-3a8198bab3f5)
+
+## Implementar una mutación para agregar una nueva ubicación:
+### Tarea: Crea una mutación que permita agregar una nueva ubicación meteorológica a la base de datos db.
+**Pasos sugeridos:**
+- Define una nueva mutación en el esquema para agregar una ubicación.
+- Implementa el resolver correspondiente que añada la nueva ubicación al array db.
+- Asegúrate de manejar posibles errores, como códigos postales duplicados
+
+![imagen](https://github.com/user-attachments/assets/c8aee99f-fba2-435a-bb1a-7495416d0d3d)
+
+## Crear consultas anidadas:
+### Tarea: Modifica la consulta weather para que, además de los campos actuales, también retorne la información de los amigos (sus códigos postales y clima).
+**Pasos sugeridos:**
+- Actualiza el tipo LocationWeatherType para que el campo friends sea de tipo [LocationWeatherType].
+- Ajusta los resolvers para resolver los datos de los amigos correctamente.
+- Realiza una consulta en el sandbox de Apollo que obtenga, por ejemplo, el clima de una ubicación y el clima de sus amigos
+
+![imagen](https://github.com/user-attachments/assets/63dd3b97-11ae-4a2d-9473-a0d73324f673)
+
+## Añadir autenticación básica:
+### Tarea: Implementa una autenticación básica en la API GraphQL que requiera un token de acceso en las solicitudes.
+**Pasos sugeridos:**
+- Configura middleware para verificar la presencia y validez del token en las solicitudes
+- Modifica los resolvers para que verifiquen la autenticidad antes de procesar las consultas o mutaciones.
+- Prueba el acceso a la API con y sin el token válido.
+
+![imagen](https://github.com/user-attachments/assets/ddec4bdd-c153-4776-846a-b1e9c390592f)
