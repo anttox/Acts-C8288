@@ -21,4 +21,25 @@ MONGO_URI=mongodb+srv://<USUARIO>:<CONTRASEÑA>@<CLUSTER>.mongodb.net/<NOMBRE_BD
 MONGO_URI_DEV=mongodb+srv://<USUARIO>:<CONTRASEÑA>@<CLUSTER>.mongodb.net/<NOMBRE_BD_DEV>?retryWrites=true&w=majority
 ```
 
+## Iniciar servidor 
+```bash
+npm run dev
+```
+## Acceder a GraphQL Sandbox
+```bash
+http://localhost:3000/api/graphql
+```
+# Flujo de Trabajo
+## Componentes principales
+
+- Schemas (schema.ts): Define el esquema GraphQL con typeDefs y entradas de datos (types e inputs) para queries y mutaciones.
+- Resolvers (resolvers.ts): Contiene la lógica que responde a las consultas y mutaciones del esquema.
+- Servicios (services.ts): Separa la lógica de acceso a datos. Aquí se encuentran funciones para realizar operaciones en MongoDB como findByZip y updateByZip.
+- Middleware (db-connect.ts): Gestiona la conexión con la base de datos MongoDB, optimizando las conexiones y reutilizándolas.
+
+# Flujo general
+- El cliente realiza una consulta o mutación a través de GraphQL Sandbox o cualquier cliente GraphQL.
+- Resolvers interpretan la solicitud, invocan los métodos necesarios en los Servicios y devuelven la respuesta al cliente.
+- Los Servicios acceden a la base de datos usando Mongoose para obtener o modificar datos.
+- El middleware dbConnect asegura una conexión eficiente a MongoDB.
 
