@@ -43,6 +43,8 @@ http://localhost:3000/api/graphql
 - Los Servicios acceden a la base de datos usando Mongoose para obtener o modificar datos.
 - El middleware dbConnect asegura una conexión eficiente a MongoDB.
 
+![image](https://github.com/user-attachments/assets/3d504963-256a-4145-9d2d-4b2b7f1fb339)
+
 # Preguntas teoricas
 ## Explicación de componentes:
 ### Pregunta: ¿Cuál es el papel de typeDefs y resolvers en una API GraphQL?
@@ -69,3 +71,37 @@ El middleware dbConnect es responsable de establecer y reutilizar conexiones a l
 - Manejo de Errores: dbConnect asegura que cualquier problema en la conexión a la base de datos sea detectado y manejado antes de que la lógica de la API continúe ejecutándose.
 
 En la actividad 14, dbConnect se utiliza como middleware para garantizar que la API GraphQL siempre tenga una conexión válida a MongoDB antes de procesar las solicitudes.
+
+# Ejercicios
+## Configuración de la conexión a MongoDB:
+### Tarea: Crea un archivo db-connect.ts en la carpeta middleware que establezca una conexión a MongoDB utilizando Mongoose. Asegúrate de manejar correctamente los errores y evitar múltiples conexiones.
+
+![image](https://github.com/user-attachments/assets/f8132111-a899-4e50-b17a-b54262a8614b)
+
+## Refactorización de Resolvers:
+### Tarea: Modifica los resolvers en graphql/resolvers.ts para que utilicen los servicios findByZip y updateByZip en lugar de acceder directamente a datos estáticos
+
+![image](https://github.com/user-attachments/assets/331e78a7-260e-422e-af79-4ef6ee1dc3c1)
+
+## Implementación de una nueva mutación:
+### Tarea: Añade una nueva mutación deleteWeather que permita eliminar un registro meteorológico por código postal. Implementa tanto el resolver como el servicio correspondiente.
+
+![image](https://github.com/user-attachments/assets/a6a8061b-26d1-4924-91ce-cef670efc253)
+
+## Pruebas en GraphQL Sandbox: (Por tiempo solo hice una prueba, pero las demas funcionan de la misma manera que el query de la imagen)
+### Tarea: Utiliza GraphQL Sandbox en http://localhost:3000/api/graphql para realizar las siguientes acciones:**
+- Consultar datos meteorológicos por código postal.
+- Actualizar los datos meteorológicos de una ubicación específica.
+- Eliminar un registro meteorológico
+
+![image](https://github.com/user-attachments/assets/5eea1f6b-77ac-4552-84da-af42d0772dc0)
+
+## Gestión de CORS:
+### Tarea: Modifica las configuraciones de CORS en el archivo api/graphql.ts para restringir el acceso a orígenes específicos en lugar de permitir cualquier origen (*)
+
+![image](https://github.com/user-attachments/assets/f6041139-48b2-4eaa-9b1c-e4a65acbfcb3)
+
+## Optimización de conexiones: (El codigo ya presente un manejo de conexiones en db-connect.ts utilizando tecnicas de reutilizacion. Sin embargo, se puede mejorar el manejo de cadenas de conexion utilizando variables de entorno en produccion)
+### Tarea: Investiga y aplica técnicas para optimizar las conexiones a la base de datos en entornos de producción, como el uso de variables de entorno para gestionar las cadenas de conexión.
+
+![image](https://github.com/user-attachments/assets/5b6ff48b-8853-4d47-bd6b-2ea03f3a0815)
