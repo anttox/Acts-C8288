@@ -108,6 +108,7 @@ Content-Type: text/html; charset=utf-8
 
 <h1>This page is secured.</h1>
 ```
+![image](https://github.com/user-attachments/assets/5870b0f6-3e2c-426d-bec8-27a0e4ec3b14)
 
 Esta respuesta confirma que el acceso al recurso protegido ha sido exitoso utilizando el token de acceso válido.
 
