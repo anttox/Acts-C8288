@@ -25,8 +25,6 @@ Entender los conceptos fundamentales de OAuth, distinguir entre autenticación y
 **Respuesta del servidor (HTTP 401 - Unauthorized)**
 Este código HTTP significa que la solicitud no fue autenticada correctamente. En otras palabras, el servidor exige que proporciones credenciales válidas (como un token de acceso) para acceder al recurso.
 
-![image](https://github.com/user-attachments/assets/27aaba56-c22c-4aa2-a8f2-91bcc50a01c7)
-
 # Configuración del cliente OAuth
 Antes de poder obtener un token de acceso, necesitamos configurar un cliente OAuth.
 ```bash
@@ -62,3 +60,54 @@ $ curl -i \
 - <OAUTH_CLIENT_ID>: ID de cliente obtenido al registrar el cliente OAuth.
 - <OAUTH_USER>: Nombre de usuario registrado.
 - <OAUTH_PASSWORD>: Contraseña registrada.
+
+![image](https://github.com/user-attachments/assets/34a17ace-b669-4c0d-a20d-caf451fc19b7)
+
+Hemos recibido un código de autorización como parte de la redirección. Esto significa que la primera parte del flujo de autorización OAuth (obtener el código de autorización) se completó correctamente.
+
+** Intercambio del código de autorización por un token de acceso**
+
+Con el Código de autorización obtenido, solicitaremos un token de acceso.
+```bash
+$ curl -i \
+    -X POST 'https://www.usemodernfullstack.dev/oauth/access_token' \
+    -H 'Accept: text/html, application/json' \
+    -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d "code=<AUTHORIZATION_GRANT>\
+&grant_type=authorization_code\
+&redirect_uri=http://localhost:3000/oauth/callback\
+&client_id=<OAUTH_CLIENT_ID>\
+&client_secret=<OAUTH_CLIENT_SECRET>"
+```
+**Reemplaza los siguientes placeholders:**
+- <AUTHORIZATION_GRANT>: Código de autorización recibido en el paso anterior.
+- <OAUTH_CLIENT_ID>: ID de cliente.
+- <OAUTH_CLIENT_SECRET>: Secreto de cliente.
+
+![image](https://github.com/user-attachments/assets/5e2e003d-0ff5-4e8d-b9ac-87375b69892c)
+
+Si todo está correcto, recibirás un token de acceso en formato JSON como la imagen.
+
+**Acceso al recurso protegido con el token de acceso**
+
+Finalmente, utilizaremos el token de acceso para acceder al recurso protegido.
+```bash
+$ curl -i \
+    -X GET 'https://www.usemodernfullstack.dev/protected/resource' \
+    -H 'Accept: text/html' \
+    -H 'Authorization: Bearer <ACCESS_TOKEN>'
+
+Reemplaza el siguiente placeholder:
+
+    <ACCESS_TOKEN>: Token de acceso obtenido en el paso anterior.
+```
+**Respuesta esperada:**
+```bash
+HTTP/2 200 OK
+Content-Type: text/html; charset=utf-8
+
+<h1>This page is secured.</h1>
+```
+
+Esta respuesta confirma que el acceso al recurso protegido ha sido exitoso utilizando el token de acceso válido.
+
