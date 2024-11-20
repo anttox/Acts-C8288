@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "types": ["node", "jest", "react-test-renderer", "aria-query"],
+    "baseUrl": ".", // Esto define la raíz del proyecto
+    "paths": {
+      "@/styles/*": ["styles/*"], // Configuración del alias para estilos
+      "@/components/*": ["components/*"], // Alias adicional para componentes (opcional)
+      "@/pages/*": ["pages/*"] // Alias para páginas (opcional)
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.config.js"],
+  "exclude": ["node_modules"]
+}

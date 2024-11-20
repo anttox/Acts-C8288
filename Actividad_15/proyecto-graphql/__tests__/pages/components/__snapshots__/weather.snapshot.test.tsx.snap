@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageComponentWeather clicks the h1 element and updates the state 1`] = `
+<div>
+  <h1
+    data-testid="weather-heading"
+    onClick={[Function]}
+  >
+    Weather Information
+  </h1>
+  <p
+    data-testid="zip-code"
+  >
+    Zip Code: 
+    15551
+  </p>
+  <p
+    data-testid="weather-status"
+  >
+    Weather: 
+    Sunny
+  </p>
+  <p
+    data-testid="temperature-c"
+  >
+    Temperature: 
+    28
+    °C / 
+    82.4
+    °F
+  </p>
+  <p
+    data-testid="friends"
+  >
+    Nearby Friends' Zip Codes: 
+    15552, 15553
+  </p>
+  <p
+    data-testid="counter"
+  >
+    Counter: 
+    1
+  </p>
+</div>
+`;
+
+exports[`PageComponentWeather renders correctly 1`] = `
+<div>
+  <h1
+    data-testid="weather-heading"
+    onClick={[Function]}
+  >
+    Weather Information
+  </h1>
+  <p
+    data-testid="zip-code"
+  >
+    Zip Code: 
+    15551
+  </p>
+  <p
+    data-testid="weather-status"
+  >
+    Weather: 
+    Sunny
+  </p>
+  <p
+    data-testid="temperature-c"
+  >
+    Temperature: 
+    28
+    °C / 
+    82.4
+    °F
+  </p>
+  <p
+    data-testid="friends"
+  >
+    Nearby Friends' Zip Codes: 
+    15552, 15553
+  </p>
+  <p
+    data-testid="counter"
+  >
+    Counter: 
+    0
+  </p>
+</div>
+`;
