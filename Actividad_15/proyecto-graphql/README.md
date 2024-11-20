@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e17686ad-aa96-4e2d-96b8-d4b2f4bcabf7)# Actividad 16: Agregar casos de pruebas usando Jest
+# Actividad 16: Agregar casos de pruebas usando Jest
 ## Objetivo
 Aprender a implementar pruebas unitarias, de instantáneas y end-to-end en una aplicación del clima utilizando Jest. Además, entender cómo utilizar spies y mocks para aislar y verificar componentes específicos de la aplicación.
 
